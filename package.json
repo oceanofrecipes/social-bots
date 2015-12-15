@@ -1,0 +1,15 @@
+{
+  "name": "oceanofrecipes",
+  "version": "1.0.0",
+  "description": "ocean of recipes",
+  "main": "bots.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.67.0",
+    "twitter": "^1.2.5"
+  }
+}
