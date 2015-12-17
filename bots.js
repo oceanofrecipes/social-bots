@@ -2,10 +2,10 @@ var Twitter = require('twitter');
 var request = require('request');
 
 var client = new Twitter({
-  consumer_key: 'IXwc8vucJCStaJJ4kbiaViCoX',
-  consumer_secret: 'Xa42H9sthvtb1aFjCZLTQzXAoKaKmA0G8hNVrUORf9M2KHMPvQ',
-  access_token_key: '268476412-zh1ZsMKMnJG02x5LodRXXi1IXPWtycigHTe3qolz',
-  access_token_secret: 'HC5nA8ZzelHQaNm43W8NkcCIWkwNruyAHi2XspkZAVsua'
+  consumer_key: process.env.TWITTER_CONSUMER_KEY,
+  consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+  access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
+  access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET,
 });
 
 var url = 'http://www.oceanofrecipes.com/?json=get_posts&orderby=rand&count=1';
